@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+    <meta name="google-site-verification" content="gAtFF20q5XtQ2BdkceTH4qC8N76R_hjWTIuo8QOJgSU" />
+    <title>Beacon Street Pizza</title>
+    <!--<link rel="shortcut icon" href="static/images/favicon.ico">-->
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='static/css/screen.css' rel='stylesheet' type='text/css' />
+    
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <script type="text/javascript" src="static/js/buy-now.js"></script>
+    <script type="text/javascript" charset="utf-8" src="static/js/coffee/nav.js"></script>
+    <script type="text/javascript" charset="utf-8" src="static/js/coffee/order.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="/static/js/coffee/register.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="static/js/coffee/home.js"></script>
+    <script src="https://cdn.optimizely.com/js/1555202034.js"></script>
+
+<!--
+    <script type="text/javascript" charset="utf-8" src="/static/js/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/static/js/angular/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/static/js/angular/controllers.js"></script>
+-->
+
+    <meta name="description" content="Wonderful Pizza From Beacon Street Pizza"/>
+    <meta name="author" content="" />
+    <!-- open graph and whatnot -->
+    <meta property="og:url" content="http://www.beaconstpizza.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Beacon Street Pizza" />
+    <meta property="og:description" content="" />
+    <!-- facebook things -->
+    <meta property="fb:admins" content="" />
+    <!-- PARTIAL FOR TRACKING -->
+    <script>
+/*========================
+MIX PANEL
+========================*/
+(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+	for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("c47e045d695c6426b06222cec2006251");
+/*========================
+GOOGLE
+========================*/
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50460501-1', 'beaconstpizza.com');
+  ga('send', 'pageview');
+  </script>
+    <!-- END PARTIAL FOR TRACKING -->
+  </head>
+  <body>
+    <aside class="cabinet">
+        <div class="close-btn">
+            <span class="glyphicon glyphicon-remove"></span>
+        </div>
+        <header class="cabinet-header">
+            <img src="static/images/beaconstpizza-logo.jpg" alt="">
+        </header>
+        
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="index.html">home</a></li>
+            <!--<li><a href="/#how-it-works">how it works</a></li>-->
+            <!--<li><a href="science.1.html">science</a></li>-->
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <ul class="nav nav-pills nav-stacked nav-customer"></ul>
+        <footer class="social-media">
+            <div class="row">
+                <div class="col-xs-3">
+                    <a href="mailto:?subject=Inquiry&amp;body=Hello Cesar https://www.beaconstpizza.com/" title="Share by Email">
+                        <img src="static/images/email.png" alt="email our url" title="email our url">
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href=""><img src="static/images/02_facebook.png" alt="like us on facebook" title="like us on facebook"></a>
+                </div>
+                <div class="col-xs-3">
+                    <a href=""><img src="static/images/10_instagram.png" alt="follow us on instagram" title="follow us on instagram"></a>
+                </div>
+                <div class="col-xs-3">
+                    <a href=""><img src="static/images/01_twitter.png" alt="follow us on twitter" title="ollow us on twitter"></a>
+                </div>
+            </div>
+        </footer>
+    </aside>
+    
+<div class="branding-img-container">
+	<a href="index.html">
+		<img src="static/images/beaconstpizza-logo.jpg" alt="Beacon Street Pizza">
+	</a>
+</div>
+
+<div class="cabinet-btn-container">
+	<button id="cabinet-button" class="btn btn-menu">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span> 
+	</button>
+</div>
+
+<div id="main-content">
+	<div class="overlay-nav"></div>
+	
+<div id="ordering">
+	<div class="container-fluid-small">
+		<header class="header-signin">
+    
+    </header>
+		<form role="form" method="POST" id="sign-in-form" autocomplete="off">
+      
+      <input type='hidden' name='csrfmiddlewaretoken' value='gI70n94ykqnmUBZnBRJOmptHa6fsHqOw' />
+			
+			<div class="form-group">
+				<span class="error"></span>
+			</div>
+			<div class="form-group">
+				<span class="error"></span>
+			</div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <a href="https://www.grubhub.com/restaurant/289334" role="button" class="btn btn-block btn-homepage">Order</a>
+		</form>
+	</div>
+</div>
+
+	<div class="clearfix"></div>
+<footer class="footer">
+	<p class="footer-text">
+		&#169; 2014 Beacon Street Pizza <span> | </span>
+		<a href="mailto:info@beaconstpizza.com">info@beaconstpizza.com</a>
+	</p>
+</footer>
+</div>
+</body>
+</html>
